@@ -2,10 +2,8 @@ package dev.andresabadia.mediator;
 import java.util.*;
 public class Formulario
 {
-    protected List<Control> controles =
-            new ArrayList<Control>();
-    protected List<Control> controlesCoprestatario =
-            new ArrayList<Control>();
+    protected List<Control> controles = new ArrayList<Control>();
+    protected List<Control> controlesCoprestatario = new ArrayList<Control>();
     protected PopupMenu menuCoprestatario;
     Boton botonOK;
     protected boolean enCurso = true;
@@ -14,14 +12,12 @@ public class Formulario
         controles.add(control);
         control.setDirector(this);
     }
-    public void agregaControlCoprestatario(Control
-                                                   control)
+    public void agregaControlCoprestatario(Control control)
     {
         controlesCoprestatario.add(control);
         control.setDirector(this);
     }
-    public void setMenuCoprestatario(PopupMenu
-                                             menuCoprestatario)
+    public void setMenuCoprestatario(PopupMenu menuCoprestatario)
     {
         this.menuCoprestatario = menuCoprestatario;
     }
@@ -34,8 +30,7 @@ public class Formulario
         if (control == menuCoprestatario)
             if (control.getValor().equals("con coprestatario"))
             {
-                for (Control elementoCoprestatario:
-                        controlesCoprestatario)
+                for (Control elementoCoprestatario:controlesCoprestatario)
                     elementoCoprestatario.informa();
             }
         if (control == botonOK)
