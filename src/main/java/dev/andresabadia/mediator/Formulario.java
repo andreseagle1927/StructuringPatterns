@@ -1,5 +1,4 @@
 package dev.andresabadia.mediator;
-
 import java.util.*;
 public class Formulario
 {
@@ -12,7 +11,7 @@ public class Formulario
     protected boolean enCurso = true;
     public void agregaControl(Control control)
     {
-        controles.Add(control);
+        controles.add(control);
         control.setDirector(this);
     }
     public void agregaControlCoprestatario(Control

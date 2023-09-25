@@ -1,7 +1,7 @@
 package dev.andresabadia.mediator;
 
 import java.util.*;
-public class PopupMenu extends control
+public class PopupMenu extends Control
 {
     protected List<String> opciones =
             new ArrayList<String>();
@@ -20,8 +20,8 @@ public class PopupMenu extends control
         int eleccion = reader.nextInt();
         if ((eleccion >= 0) && (eleccion < opciones.size()))
         {
-            boolean cambia = !(getValor
-                    .equals(opciones.get(eleccion)));
+            boolean cambia = !(getValor().equals(opciones.get(eleccion)));
+
             if (cambia)
             {
                 setValor(opciones.get(eleccion));
