@@ -2,8 +2,7 @@ package dev.andresabadia.state;
 
 public class PedidoValidado extends EstadoPedido
 {
-    public PedidoValidado(Pedido pedido)
-    {
+    public PedidoValidado(Pedido pedido) {
         super(pedido);
     }
     public void agregaProducto(Producto producto) { }
