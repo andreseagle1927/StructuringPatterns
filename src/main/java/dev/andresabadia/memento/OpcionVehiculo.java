@@ -8,8 +8,7 @@ public class OpcionVehiculo{
     {
         this.nombre = nombre;
     }
-    public void agregaOpcionIncompatible(OpcionVehiculo
-                                                 opcionIncompatible)
+    public void agregaOpcionIncompatible(OpcionVehiculo opcionIncompatible)
     {
         if (!opcionesIncompatibles.contains(opcionIncompatible))
         {

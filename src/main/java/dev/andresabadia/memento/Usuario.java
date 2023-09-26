@@ -24,6 +24,6 @@ public class Usuario
         carritoOpciones.visualiza();
         carritoOpciones.anula(memento);
         carritoOpciones.visualiza();
-        
+
     }
 }
